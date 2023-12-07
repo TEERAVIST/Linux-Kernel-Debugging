@@ -16,6 +16,7 @@ we will use "sudo make modules_install".
 we use "sudo make install".
 
 when done all you should reboot your system "sudo reboot".
+```sudo reboot```
 
 
 
