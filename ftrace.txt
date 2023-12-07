@@ -1,0 +1,20 @@
+they are stay in /sys/kernel/tracing.
+in old place they are stay in /sys/kernel/debug/tracing.
+
+
+U can see a available_tracers for what you want to trace
+
+
+u gotta "echo <available_tracers> > current_tracer" for tracing 
+
+
+when u wanna see a result u gotta "cat trace". this is all done 
+
+
+NEXT if u wanna use filter a module kernel u gotta "echo <available_filter_functions> > set_ftrace_filter"
+
+
+to be honest, they are tons of functions for playing around . this is just a basic "ftrace". 
+
+
+TIP! if u wanna to set empty to /sys/kernel/tracing/current_tracer . u gotta type "echo nop > current_tracer" . and in filter gotta be a "echo > set_ftrace_filter"
